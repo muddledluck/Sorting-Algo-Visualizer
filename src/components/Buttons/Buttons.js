@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 
-const Buttons = ({resetArray, mergeSort, quickSort, volume }) => {
+const Buttons = ({resetArray, mergeSort, quickSort, heapSort, volume }) => {
 		return(
 			<Navbar bg="light" expand="lg">
 				<Button 
@@ -22,7 +22,7 @@ const Buttons = ({resetArray, mergeSort, quickSort, volume }) => {
 				</Button>
 				<Button 
 					className="mr-3" 
-					onClick={() => resetArray(volume)}>
+					onClick={() => heapSort()}>
 						Heap Sort
 				</Button>
 				<Button 

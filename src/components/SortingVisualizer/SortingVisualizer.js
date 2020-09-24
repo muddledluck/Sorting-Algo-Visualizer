@@ -2,7 +2,8 @@ import React from 'react';
 import SizeRange from '../SizeRange/SizeRange';
 import Buttons from '../Buttons/Buttons';
 import {getMergeSortAnimations} from '../MergeSortAnimation/MeargeSortAnimation';
-import { getQuickSortAnimations } from '../QuickSortAnimation/QuickSortAnimation'
+import { getQuickSortAnimations } from '../QuickSortAnimation/QuickSortAnimation';
+import { getHeapSortAnimations } from '../HeapSortAnimation/HeapSortAnimation';
 import './SortingVisualizer.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -56,7 +57,7 @@ class SortingVisualizer extends React.Component{
 					const [barOneIdx, newHeight] = animations[i];
 					const barOneStyle = arrayBars[barOneIdx].style;
 					barOneStyle.height = `${newHeight}px`;
-				}, (i * 500)/size);
+				}, (i * 1000)/ size);
 			}
 		}
 	}
@@ -86,13 +87,37 @@ class SortingVisualizer extends React.Component{
 		}
 	}
 
+	heapSort = () => {
+		const { array, size } = this.state;
+		const animations = getHeapSortAnimations(array);
+		for (let i = 0; i < animations.length; i++){
+			const arrayBars = document.getElementsByClassName('array-bar');
+			const isColorChange = i % 4 < 2;
+			if (isColorChange){
+				const [barOneIdx, barTwoIdx] = animations[i];
+				const barOneStyle = arrayBars[barOneIdx].style;
+				const barTwoStyle = arrayBars[barTwoIdx].style;
+				const color = i % 4 === 0 ? 'red' : 'turquoise';
+				setTimeout(() => {
+					barOneStyle.backgroundColor = color;
+					barTwoStyle.backgroundColor = color;
+				}, (i * 1000)/ size);
+			} else {
+				setTimeout(() => {
+					const [barOneIdx, newHeight] = animations[i];
+					const barOneStyle = arrayBars[barOneIdx].style;
+					barOneStyle.height = `${newHeight}px`;
+					}, (i * 1000) / size);
+			}
+		}
+	}
 
 	render() {
 		const {array} = this.state;
 		let { size } = this.state;
 		return (
 			<div>
-				<Buttons resetArray={this.resetArray} mergeSort = {this.mergeSort} quickSort = {this.quickSort} volume={size}/>
+				<Buttons resetArray={this.resetArray} mergeSort = {this.mergeSort} quickSort = {this.quickSort} heapSort = {this.heapSort} volume={size}/>
 				<SizeRange state={this.state} resetArray={this.resetArray} />
 				<div className="array-container">					
 					{

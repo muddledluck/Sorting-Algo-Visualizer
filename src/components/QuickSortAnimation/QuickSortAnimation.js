@@ -77,13 +77,3 @@ function partition(auxiliaryArray, startIdx, endIdx, animations){
 	swap(auxiliaryArray, lessTailIdx, endIdx);
 	return lessTailIdx
 }
-
-/*
-const [swap, barIndex, newHeight] = animations[i];
-                if (barIndex === -1) {
-                    continue;
-                }
-                const barStyle = arrayBars[barIndex].style;
-                setTimeout(() => {
-                    barStyle.height = `${newHeight}px`;
-*/
