@@ -6,7 +6,6 @@ const Styles = styled.div`
 `;
 const showValue = (value) => {
     const element = document.getElementById("showValue");
-    console.log(element)
     element.innerHTML = value;
   }
 const SizeRange = ({ state, resetArray }) => {
@@ -25,10 +24,9 @@ const SizeRange = ({ state, resetArray }) => {
             state.size = event.target.value;
             resetArray(state.size);
             showValue(state.size);
-            console.log(event.target.value);
           }} />
           <br></br>
-          <span id="showValue">250</span>
+          <span id="showValue">20</span>
       </Styles>
     </div>
     )

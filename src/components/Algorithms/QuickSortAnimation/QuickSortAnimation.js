@@ -1,3 +1,5 @@
+import { checkAlgo, swap } from "../SortingComponents/SortingComponents";
+
 export function getQuickSortAnimations(array) {
 	const animations = [];
 	if (array.length <= 1){
@@ -7,27 +9,10 @@ export function getQuickSortAnimations(array) {
 	quickSortHelper(auxiliaryArray, 0, array.length-1, animations);
 	const javaScriptSortedArray = array.slice().sort((a, b) => a - b);
 	array = auxiliaryArray;
-	console.log("alog is correct? ", checkAlgo(array, javaScriptSortedArray))
+	console.log("alog is correct?(Quick Sort) ", checkAlgo(array, javaScriptSortedArray))
 	return animations;
 }
 
-function checkAlgo(array, javaScriptSortedArray){
-	if (array.length !== javaScriptSortedArray.length){
-		return false
-	} 
-	for(let i = 0; i < array.length; i++){
-		if (array[i] !== javaScriptSortedArray[i]){
-			return false
-		}
-	}
-	return true
-}
-
-function swap(array, startIdx, endIdx){
-	const temp = array[startIdx];
-	array[startIdx] = array[endIdx];
-	array[endIdx] = temp;
-}
 
 function randomIntFromInterval(min, max) {
 	return Math.floor(Math.random() * (max-min + 1) + min);

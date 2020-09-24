@@ -1,3 +1,5 @@
+import { checkAlgo, swap } from "../SortingComponents/SortingComponents";
+
 export function getHeapSortAnimations(array){
 	const animations = [];
 	if (array.length <= 1){
@@ -9,24 +11,6 @@ export function getHeapSortAnimations(array){
 	array = auxiliaryArray;
 	console.log("alog is Correct(Heap Sort)? ", checkAlgo(array, javaScriptSortedArray))
 	return animations;
-}
-
-function checkAlgo(array, javaScriptSortedArray){
-	if(array.length !== javaScriptSortedArray.length){
-		return false;
-	}
-	for (let i = 0; i < array.length; i++){
-		if (array[i] !== javaScriptSortedArray[i]){
-			return false;
-		}
-	}
-	return true;
-}
-
-function swap(array, startIdx, endIdx){
-	const temp = array[startIdx];
-	array[startIdx] = array[endIdx];
-	array[endIdx] = temp;
 }
 
 function heapSortHelper(auxiliaryArray, arrLength, animations){

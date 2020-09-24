@@ -1,10 +1,14 @@
+import { checkAlgo } from "../SortingComponents/SortingComponents";
+
 export function getMergeSortAnimations(array) {
 	const animations = [];
 	if (array.length <= 1){
 		return array;
 	}
 	const auxiliaryArray = array.slice(); // copy of a main array
+	const javaScriptSortedArray = array.slice().sort((a, b) => a - b);
 	mergeSortHelper(array, 0, array.length - 1, auxiliaryArray, animations);
+	console.log("alog is correct(Marge Sort)? ", checkAlgo(array, javaScriptSortedArray))
 	return animations;
 }
 

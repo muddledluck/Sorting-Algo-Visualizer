@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 
-const Buttons = ({resetArray, mergeSort, quickSort, heapSort, volume }) => {
+const Buttons = ({resetArray, mergeSort, quickSort, heapSort, bubbleSort, volume }) => {
 		return(
 			<Navbar bg="light" expand="lg">
 				<Button 
@@ -12,7 +12,7 @@ const Buttons = ({resetArray, mergeSort, quickSort, heapSort, volume }) => {
 				</Button>
 				<Button 
 					className="mr-3" 
-					onClick={() => mergeSort()}>
+					onClick={() => {mergeSort()}}>
 						Marge Sort
 				</Button>
 				<Button 
@@ -27,8 +27,8 @@ const Buttons = ({resetArray, mergeSort, quickSort, heapSort, volume }) => {
 				</Button>
 				<Button 
 					className="mr-3" 
-					onClick={() => resetArray(volume)}>
-						Bubble Sort
+					onClick={() => bubbleSort()}>
+						Bubble Sort <br></br>(Use array size at max 20 othervise it stuck ;)
 				</Button>
 			</Navbar>
 			)
