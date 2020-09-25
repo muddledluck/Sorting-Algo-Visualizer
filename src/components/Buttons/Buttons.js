@@ -13,7 +13,7 @@ const Buttons = ({resetArray, mergeSort, quickSort, heapSort, bubbleSort, volume
 				<Button 
 					className="mr-3" 
 					onClick={() => {mergeSort()}}>
-						Marge Sort
+						Merge Sort
 				</Button>
 				<Button 
 					className="mr-3" 
