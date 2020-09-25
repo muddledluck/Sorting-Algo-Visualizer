@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "211bdd73c75288e5903c8e3ea540013a",
+    "revision": "70642badb16d29dc0f70e0e60548d548",
     "url": "/Sorting-Algo-Visualizer/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Sorting-Algo-Visualizer/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "0bc5ae773917bfba66bc",
+    "revision": "6d7073f8da84435679c7",
     "url": "/Sorting-Algo-Visualizer/static/css/main.44440cf7.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Sorting-Algo-Visualizer/static/js/2.02a6c56a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0bc5ae773917bfba66bc",
-    "url": "/Sorting-Algo-Visualizer/static/js/main.6d6755b4.chunk.js"
+    "revision": "6d7073f8da84435679c7",
+    "url": "/Sorting-Algo-Visualizer/static/js/main.a91e0030.chunk.js"
   },
   {
     "revision": "ac3b38c9e5cef3402b2d",
