@@ -19,7 +19,7 @@ function bubbleSortHelper(auxiliaryArray, arrLength, animations){
 		for(let j = 0; j < arrLength - 1; j++){
 			if (auxiliaryArray[j] > auxiliaryArray[j + 1]){
 				animations.push([j, j+1]);
-				animations.push([j+1, j]);
+				animations.push([j + 1, j]);
 				animations.push([j, auxiliaryArray[j+1]]);
 				animations.push([j+1, auxiliaryArray[j]]);
 				swap(auxiliaryArray, j, j+1);
