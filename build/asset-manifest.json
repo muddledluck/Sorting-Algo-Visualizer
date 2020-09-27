@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Sorting-Algo-Visualizer/static/css/main.44440cf7.chunk.css",
-    "main.js": "/Sorting-Algo-Visualizer/static/js/main.a91e0030.chunk.js",
-    "main.js.map": "/Sorting-Algo-Visualizer/static/js/main.a91e0030.chunk.js.map",
+    "main.css": "/Sorting-Algo-Visualizer/static/css/main.f59419c0.chunk.css",
+    "main.js": "/Sorting-Algo-Visualizer/static/js/main.d859ca84.chunk.js",
+    "main.js.map": "/Sorting-Algo-Visualizer/static/js/main.d859ca84.chunk.js.map",
     "runtime-main.js": "/Sorting-Algo-Visualizer/static/js/runtime-main.a0d73ab2.js",
     "runtime-main.js.map": "/Sorting-Algo-Visualizer/static/js/runtime-main.a0d73ab2.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/Sorting-Algo-Visualizer/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.02a6c56a.chunk.js": "/Sorting-Algo-Visualizer/static/js/2.02a6c56a.chunk.js",
-    "static/js/2.02a6c56a.chunk.js.map": "/Sorting-Algo-Visualizer/static/js/2.02a6c56a.chunk.js.map",
+    "static/css/2.f6d03aaa.chunk.css": "/Sorting-Algo-Visualizer/static/css/2.f6d03aaa.chunk.css",
+    "static/js/2.0e5b0728.chunk.js": "/Sorting-Algo-Visualizer/static/js/2.0e5b0728.chunk.js",
+    "static/js/2.0e5b0728.chunk.js.map": "/Sorting-Algo-Visualizer/static/js/2.0e5b0728.chunk.js.map",
     "index.html": "/Sorting-Algo-Visualizer/index.html",
-    "precache-manifest.741def725323452665d4d6081820dc38.js": "/Sorting-Algo-Visualizer/precache-manifest.741def725323452665d4d6081820dc38.js",
+    "precache-manifest.9cc396db6390bb15bd5f3f3082140930.js": "/Sorting-Algo-Visualizer/precache-manifest.9cc396db6390bb15bd5f3f3082140930.js",
     "service-worker.js": "/Sorting-Algo-Visualizer/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/Sorting-Algo-Visualizer/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.44440cf7.chunk.css.map": "/Sorting-Algo-Visualizer/static/css/main.44440cf7.chunk.css.map",
-    "static/js/2.02a6c56a.chunk.js.LICENSE.txt": "/Sorting-Algo-Visualizer/static/js/2.02a6c56a.chunk.js.LICENSE.txt"
+    "static/css/2.f6d03aaa.chunk.css.map": "/Sorting-Algo-Visualizer/static/css/2.f6d03aaa.chunk.css.map",
+    "static/css/main.f59419c0.chunk.css.map": "/Sorting-Algo-Visualizer/static/css/main.f59419c0.chunk.css.map",
+    "static/js/2.0e5b0728.chunk.js.LICENSE.txt": "/Sorting-Algo-Visualizer/static/js/2.0e5b0728.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a0d73ab2.js",
-    "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.02a6c56a.chunk.js",
-    "static/css/main.44440cf7.chunk.css",
-    "static/js/main.a91e0030.chunk.js"
+    "static/css/2.f6d03aaa.chunk.css",
+    "static/js/2.0e5b0728.chunk.js",
+    "static/css/main.f59419c0.chunk.css",
+    "static/js/main.d859ca84.chunk.js"
   ]
 }
